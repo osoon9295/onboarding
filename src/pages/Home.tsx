@@ -18,10 +18,10 @@ const Home = () => {
       <ul>
         {data.map((data: TestDataType) => {
           return (
-            <div className="w-[100%] flex gap-5">
-              <span>{data.id}</span>
+            <li key={data.id} className="w-[100%] flex gap-5">
+              <span>{data.userId}</span>
               <span>{data.title}</span>
-            </div>
+            </li>
           );
         })}
       </ul>
