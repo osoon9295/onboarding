@@ -26,18 +26,21 @@ const Layout = () => {
 
   return (
     <div>
-      <div className="bg-red-500">
-        {user ? (
-          <div>
-            <span>user.nickname </span>
-            <button onClick={handleLogout}>로그아웃</button>
-          </div>
-        ) : (
-          <div>
-            <button onClick={() => navigate("/login")}>로그인</button>
-            <button onClick={() => navigate("/signup")}>회원가입</button>
-          </div>
-        )}
+      <div className="flex items-end justify-center h-16 border-y-2">
+        <div className="flex justify-end h-10 w-[80%]">
+          {user ? (
+            <div className="flex gap-4">
+              <span>user.nickname </span>
+              <button onClick={() => navigate("/mypage")}>마이페이지</button>
+              <button onClick={handleLogout}>로그아웃</button>
+            </div>
+          ) : (
+            <div className="flex gap-4">
+              <button onClick={() => navigate("/login")}>로그인</button>
+              <button onClick={() => navigate("/signup")}>회원가입</button>
+            </div>
+          )}
+        </div>
       </div>
       <Outlet />
     </div>
