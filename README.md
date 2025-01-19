@@ -1,50 +1,49 @@
-# React + TypeScript + Vite
+# 한달 인턴 온보딩 과제
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 페이지 소개
 
-Currently, two official plugins are available:
+- 로그인 페이지
+- 회원가입 페이지
+- 마이페이지(프로필) 페이지
+- 홈
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 사용기술
 
-## Expanding the ESLint configuration
+- tailwind css
+- zustand
+- tanstack-query
+- axios
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 폴더구조
 
-- Configure the top-level `parserOptions` property like this:
+📦src
+┣ 📂api
+┃ ┣ 📜auth.api.ts
+┃ ┗ 📜test.api.ts
+┣ 📂assets
+┣ 📂components
+┃ ┣ 📜Header.tsx
+┃ ┣ 📜LoginForm.tsx
+┃ ┗ 📜SignupForm.tsx
+┣ 📂hooks
+┃ ┗ 📜useTest.ts
+┣ 📂pages
+┃ ┣ 📜Home.tsx
+┃ ┣ 📜Login.tsx
+┃ ┣ 📜MyPage.tsx
+┃ ┗ 📜Signup.tsx
+┣ 📂shared
+┃ ┗ 📜Router.tsx
+┣ 📂stores
+┃ ┗ 📜user.store.ts
+┣ 📂types
+┃ ┣ 📜auth.type.ts
+┃ ┗ 📜user.type.ts
+┣ 📜App.tsx
+┣ 📜index.css
+┣ 📜main.tsx
+┗ 📜vite-env.d.ts
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### 배포 링크
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+https://onboarding-git-main-boyoungs-projects-1e50310c.vercel.app/
