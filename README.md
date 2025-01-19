@@ -16,32 +16,32 @@
 
 ### 폴더구조
 
-📦src
-┣ 📂api
-┃ ┣ 📜auth.api.ts
-┃ ┗ 📜test.api.ts
-┣ 📂assets
-┣ 📂components
-┃ ┣ 📜Header.tsx
-┃ ┣ 📜LoginForm.tsx
-┃ ┗ 📜SignupForm.tsx
-┣ 📂hooks
-┃ ┗ 📜useTest.ts
-┣ 📂pages
-┃ ┣ 📜Home.tsx
-┃ ┣ 📜Login.tsx
-┃ ┣ 📜MyPage.tsx
-┃ ┗ 📜Signup.tsx
-┣ 📂shared
-┃ ┗ 📜Router.tsx
-┣ 📂stores
-┃ ┗ 📜user.store.ts
-┣ 📂types
-┃ ┣ 📜auth.type.ts
-┃ ┗ 📜user.type.ts
-┣ 📜App.tsx
-┣ 📜index.css
-┣ 📜main.tsx
+📦src  
+┣ 📂api  
+┃ ┣ 📜auth.api.ts  
+┃ ┗ 📜test.api.ts  
+┣ 📂assets  
+┣ 📂components  
+┃ ┣ 📜Header.tsx  
+┃ ┣ 📜LoginForm.tsx  
+┃ ┗ 📜SignupForm.tsx  
+┣ 📂hooks  
+┃ ┗ 📜useTest.ts  
+┣ 📂pages  
+┃ ┣ 📜Home.tsx  
+┃ ┣ 📜Login.tsx  
+┃ ┣ 📜MyPage.tsx  
+┃ ┗ 📜Signup.tsx  
+┣ 📂shared  
+┃ ┗ 📜Router.tsx  
+┣ 📂stores  
+┃ ┗ 📜user.store.ts  
+┣ 📂types  
+┃ ┣ 📜auth.type.ts  
+┃ ┗ 📜user.type.ts  
+┣ 📜App.tsx  
+┣ 📜index.css  
+┣ 📜main.tsx  
 ┗ 📜vite-env.d.ts
 
 ### 배포 링크
