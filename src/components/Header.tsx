@@ -10,9 +10,9 @@ const Layout = () => {
 
   const handleLogout = useCallback(() => {
     setUser(null);
-    // navigate("/login");
+    navigate("/login");
     localStorage.clear();
-  }, [setUser]);
+  }, [setUser, navigate]);
 
   useEffect(() => {
     getUser().then((res) => {

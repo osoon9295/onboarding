@@ -41,20 +41,38 @@ const MyPage = () => {
   };
 
   return (
-    <div>
-      <h2>프로필 수정</h2>
-      <form onSubmit={handleUpdateProfile}>
-        <label htmlFor="nickname">닉네임</label>
-        <input
-          type="text"
-          placeholder="닉네임"
-          minLength={1}
-          maxLength={10}
-          onChange={(e) => setNickname(e.target.value)}
-        />
-        <label htmlFor="avatar">이미지</label>
-        <input type="file" onChange={handleFileChange} />
-        <button type="submit">프로필 업데이트</button>
+    <div className="flex flex-col gap-3 items-center justify-center w-[500px] h-[500px] mx-auto mt-10 border-2 rounded-2xl">
+      <h2 className="text-3xl">프로필 수정</h2>
+      <form
+        onSubmit={handleUpdateProfile}
+        className="flex flex-col items-center justify-center gap-4 w-[280px]"
+      >
+        <div className="flex flex-col justify-center gap-2 h-[150px]">
+          <div className="flex w-[280px] justify-between">
+            <label htmlFor="nickname">닉네임</label>
+            <input
+              type="text"
+              minLength={1}
+              maxLength={10}
+              onChange={(e) => setNickname(e.target.value)}
+              className="border-[2px] rounded-md"
+            />
+          </div>
+          <div className="flex flex-col gap-2 w-[280px] justify-between">
+            <label htmlFor="avatar">이미지</label>
+            <input
+              type="file"
+              onChange={handleFileChange}
+              className="border-[2px] rounded-md"
+            />
+          </div>
+        </div>
+        <button
+          type="submit"
+          className="bg-yellow-100 w-[280px] h-[40px] rounded-xl"
+        >
+          프로필 업데이트
+        </button>
       </form>
     </div>
   );
